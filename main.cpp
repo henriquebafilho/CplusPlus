@@ -5,20 +5,17 @@ using namespace std;
 
 int main()
 {
-    bool b = true;
-    bool b2 = (1 == 1);
+    int i = 5 , i2 = 10;
 
-    cout << "O valor contido em b eh: " << b << endl;
-    cout << "O valor contido em b2 eh: " << b2 << endl;
+    cout << "Se i for igual a i2, entao, a frase a seguir sera impressa." << endl;
+    //i << é igual a >> i2
+    if (i == i2)
+        cout << "A variavel i eh igual a i2" << endl;
 
-    //True representa o valor 1
-    //False representa o valor 0
-
-    bool c = 0; //false
-    bool c2 = 1; // true
-
-    cout << "O valor eh: " << (c2 == true) << endl;//true ------> 1
-    cout << "O valor eh: " << (c2 == false) << endl;//false ------> 0
+    cout << "i eh diferente de i2?" << endl;
+    //i << é igual a >> i2
+    if ((i != i2) == true)
+        cout << "Sim, i eh diferente de i2" << endl;
 
     system("pause");
     return 0;
