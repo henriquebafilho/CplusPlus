@@ -5,17 +5,18 @@ using namespace std;
 
 int main()
 {
-    int x, y;
-    x = 3;
-    y = 9;
+    int num1, num2, soma, sub, multi, div;
 
-    cout << "O valor de x e y eh: " << x << " e " << y << endl;
+    cout << "Seja bem-vindo ao estudo da nossa primeira calculadora!" << endl;
+    cout << "Digite o primeiro numero: " << endl;
+    cin >> num1;
+    cout << "Digite o segundo numero: " << endl;
+    cin >> num2;
 
-    cout << "A soma entre x e y eh: " << x + y << endl;
-    cout << "A subtracao entre x e y eh: " << x - y << endl;
-    cout << "A multiplicacao entre x e y eh: " << x * y << endl;
-    double d = y / (x+1.0);
-    cout << "A divisao entre y e x eh: " << d << endl;
+    cout << "A soma entre " << num1 << " e " << num2 << " eh: " << num1 + num2 << endl;
+    cout << "A subtracao entre " << num1 << " e " << num2 << " eh: " << num1 - num2 << endl;
+    cout << "A multi entre " << num1 << " e " << num2 << " eh: " << num1 * num2 << endl;
+    cout << "A div entre " << num1 << " e " << num2 << " eh: " << num1 / num2 << endl;
 
     system("pause");
     return 0;
