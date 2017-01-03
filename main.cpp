@@ -5,18 +5,24 @@ using namespace std;
 
 int main()
 {
-    int num1, num2, soma, sub, multi, div;
+    int a = 5 / 2;
+    int num1, num2;
+    num1 = 10;
+    num2 = 3;
 
-    cout << "Seja bem-vindo ao estudo da nossa primeira calculadora!" << endl;
-    cout << "Digite o primeiro numero: " << endl;
-    cin >> num1;
-    cout << "Digite o segundo numero: " << endl;
-    cin >> num2;
+    int div = num1 / num2;
+    int resto = num1 % num2;
 
-    cout << "A soma entre " << num1 << " e " << num2 << " eh: " << num1 + num2 << endl;
-    cout << "A subtracao entre " << num1 << " e " << num2 << " eh: " << num1 - num2 << endl;
-    cout << "A multi entre " << num1 << " e " << num2 << " eh: " << num1 * num2 << endl;
-    cout << "A div entre " << num1 << " e " << num2 << " eh: " << num1 / num2 << endl;
+    cout << "A divisao entre " << num1 << " e " << num2 << " eh igual a " << div << endl;
+    cout << "A divisao entre " << num1 << " e " << num2 << " tem resto " << resto << endl;
+
+    cout << "O modulo entre 3 e 2 eh: " << 3 % 2 << endl;
+    cout << "O modulo entre 4 e 2 eh: " << 4 % 2 << endl;
+    cout << "O modulo entre 5 e 2 eh: " << 5 % 2 << endl;
+    cout << "O modulo entre 6 e 2 eh: " << 6 % 2 << endl;
+
+    cout << 10 % 2 << endl;
+    cout << 9 % 2 << endl;
 
     system("pause");
     return 0;
