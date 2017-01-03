@@ -24,7 +24,7 @@ int main()
 
     cout << "A sua media no semestre foi :" << soma << endl << endl;
 
-    if(soma > 7)
+    if(soma >= 7)
     {
         cout << "Parabens! Voce foi aprovado" << endl;
     }
