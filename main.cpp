@@ -3,12 +3,16 @@ using namespace std;
 
 int main()
 {
-    int num;
-    num = 10;
-    int num2;
-    num2 = 500;
+    int varInt = 100;
+    char c = 'r';
+    double pFlutuante = 5.99;
 
-    cout << num2 + num << endl;
-
+    cout << "O valor da variavel varInt eh: " << varInt << endl;
+    cout << "O valor da variavel c eh: " << c << endl;
+    cout << "O valor da variavel pFlutuante eh: " << pFlutuante << endl;
+    cout << endl;
+    cout << "Memoria da variavel varInt eh: " << sizeof(varInt) << " bytes" << endl;
+    cout << "Memoria da variavel c eh: " << sizeof(c) << " bytes" << endl;
+    cout << "Memoria da variavel pFlutuante eh: " << sizeof(pFlutuante) << " bytes" << endl;
     return 0;
 }
