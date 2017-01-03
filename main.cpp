@@ -5,18 +5,27 @@ using namespace std;
 
 int main()
 {
-    int i = 5 , i2 = 10;
+    bool continuar = true;
 
-    cout << "Se i for igual a i2, entao, a frase a seguir sera impressa." << endl;
-    //i << é igual a >> i2
-    if (i == i2)
-        cout << "A variavel i eh igual a i2" << endl;
+    while (continuar)
+    {
+        cout << "Digite um numero qualquer: " << endl;
+        int valor = 0;
+        cin >> valor;
 
-    cout << "i eh diferente de i2?" << endl;
-    //i << é igual a >> i2
-    if ((i != i2) == true)
-        cout << "Sim, i eh diferente de i2" << endl;
-
+        if(valor > 50)
+        {
+            cout << "O valor digitado eh maior que 50" << endl;
+        }
+        /*if(valor == 50)
+        {
+            cout << "O valor digitado eh igual a 50" << endl;
+        } */
+        else
+        {
+            cout << "O valor digitado eh menor que 50" << endl;
+        }
+    }
     system("pause");
     return 0;
 }
