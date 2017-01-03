@@ -5,27 +5,33 @@ using namespace std;
 
 int main()
 {
-    int nota1, nota2, nota3, nota4, media;
+    double nota1, nota2, nota3, nota4;
 
-    cout << "Insira a nota do primeiro bimestre: " << endl;
+    cout << "Digite a sua primeira nota do semestre >> ";
     cin >> nota1;
 
-    cout << "Insira nota do segundo bimestre: " << endl;
+    cout << "Digite a sua segunda nota do semestre >> ";
     cin >> nota2;
 
-    cout << "Insira a nota do terceiro bimestre: " << endl;
+    cout << "Digite a sua terceira nota do semestre >> ";
     cin >> nota3;
 
-    cout << "Insira a nota do quarto bimestre: " << endl;
+    cout << "Digite a sua quarta nota do semestre >> " ;
     cin >> nota4;
 
-    media = (nota1 + nota2 + nota3 + nota4) / 4;
+    double soma = nota1 + nota2 + nota3 + nota4;
+    soma = (soma / 4);
 
-    cout << "A media do aluno no ano eh: " << media << endl;
-    if(media >= 7)
-        cout << "O aluno foi aprovado." << endl;
+    cout << "A sua media no semestre foi :" << soma << endl << endl;
+
+    if(soma > 7)
+    {
+        cout << "Parabens! Voce foi aprovado" << endl;
+    }
     else
-        cout << "O aluno foi reprovado." << endl;
+    {
+        cout << "Eita! Voce foi reprovado" << endl;
+    }
 
     system("pause");
     return 0;
