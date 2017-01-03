@@ -5,20 +5,18 @@ using namespace std;
 
 int main()
 {
-    int a = 0; //4 bytes
-    short int b = 0; //2 bytes
-    long int c = 0; //4 bytes
+    int x, y;
+    x = 3;
+    y = 9;
 
-    int a2 = 0;
-    signed int b2 = -10;
-    unsigned int c2 = -10;
+    cout << "O valor de x e y eh: " << x << " e " << y << endl;
 
-    char caractere = 200;
-    unsigned char caractere2 = 200;
+    cout << "A soma entre x e y eh: " << x + y << endl;
+    cout << "A subtracao entre x e y eh: " << x - y << endl;
+    cout << "A multiplicacao entre x e y eh: " << x * y << endl;
+    double d = y / (x+1.0);
+    cout << "A divisao entre y e x eh: " << d << endl;
 
-    cout << sizeof(a) << " - " << a2 << endl;
-    cout << sizeof(b) << " - " << b2 << endl;
-    cout << sizeof(c) << " - " << c2 << endl;
-
+    system("pause");
     return 0;
 }
