@@ -5,42 +5,20 @@ using namespace std;
 
 int main()
 {
-    double num;
-    double total;
-    char operacao;
+    int a = 0; //4 bytes
+    short int b = 0; //2 bytes
+    long int c = 0; //4 bytes
 
-    num = 0;
-    total = 0;
-    operacao = '+';
+    int a2 = 0;
+    signed int b2 = -10;
+    unsigned int c2 = -10;
 
-    while(operacao != '=')
-    {
-    //OPERADOR DE EXTRAÇÃO
-    cout << "Informe um numero: " << endl;
-    cin >> num;
+    char caractere = 200;
+    unsigned char caractere2 = 200;
 
-        switch(operacao)
-        {
-            case 1 :
-                operacao = '+';
-                total = total + num;
-                break;
-            case 2 :
-                operacao = '-';
-                total = total - num;
-                break;
-            case 3 :
-                operacao = '*';
-                total = total * num;
-                break;
-            case 4 :
-                operacao = '/';
-                total = total / num;
-                break;
-        }
-     cout << "Informe a operacao: " << endl;
-     cin >> operacao;
-    }
-    cout << "O resultado eh: " << total << endl;
+    cout << sizeof(a) << " - " << a2 << endl;
+    cout << sizeof(b) << " - " << b2 << endl;
+    cout << sizeof(c) << " - " << c2 << endl;
+
     return 0;
 }
