@@ -1,18 +1,29 @@
 #include <iostream>
+#include <stdlib.h>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
-    int varInt = 100;
-    char c = 'r';
-    double pFlutuante = 5.99;
+    //obj cin
+    //obj cout
 
-    cout << "O valor da variavel varInt eh: " << varInt << endl;
-    cout << "O valor da variavel c eh: " << c << endl;
-    cout << "O valor da variavel pFlutuante eh: " << pFlutuante << endl;
-    cout << endl;
-    cout << "Memoria da variavel varInt eh: " << sizeof(varInt) << " bytes" << endl;
-    cout << "Memoria da variavel c eh: " << sizeof(c) << " bytes" << endl;
-    cout << "Memoria da variavel pFlutuante eh: " << sizeof(pFlutuante) << " bytes" << endl;
+    //O campo possui 1000 caracteres
+    cout << "Estudando a entrada e saída de dados" << endl;
+    /*cout << setw(10) << 1 << endl;
+    cout << setw(10) << 2 << endl;
+    cout << setw(10) << 3 << endl;
+    cout << setw(10) << 4 << endl; */
+
+    cout << setw(10) << 1;
+    cout << setw(10) << 2;
+    cout << setw(10) << 3;
+    cout << setw(10) << 4 << endl;
+
+    //HEXADECIMAL
+    cout << "Estudando a entrada e saída de dados" << endl;
+    cout << hex << 10 + 50 << endl;
+
+    system("pause");
     return 0;
 }
