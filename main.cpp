@@ -5,27 +5,28 @@ using namespace std;
 
 int main()
 {
-    bool continuar = true;
+    int nota1, nota2, nota3, nota4, media;
 
-    while (continuar)
-    {
-        cout << "Digite um numero qualquer: " << endl;
-        int valor = 0;
-        cin >> valor;
+    cout << "Insira a nota do primeiro bimestre: " << endl;
+    cin >> nota1;
 
-        if(valor > 50)
-        {
-            cout << "O valor digitado eh maior que 50" << endl;
-        }
-        /*if(valor == 50)
-        {
-            cout << "O valor digitado eh igual a 50" << endl;
-        } */
-        else
-        {
-            cout << "O valor digitado eh menor que 50" << endl;
-        }
-    }
+    cout << "Insira nota do segundo bimestre: " << endl;
+    cin >> nota2;
+
+    cout << "Insira a nota do terceiro bimestre: " << endl;
+    cin >> nota3;
+
+    cout << "Insira a nota do quarto bimestre: " << endl;
+    cin >> nota4;
+
+    media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+    cout << "A media do aluno no ano eh: " << media << endl;
+    if(media >= 7)
+        cout << "O aluno foi aprovado." << endl;
+    else
+        cout << "O aluno foi reprovado." << endl;
+
     system("pause");
     return 0;
 }
