@@ -5,25 +5,21 @@ using namespace std;
 
 int main()
 {
-    //obj cin
-    //obj cout
+    //OPERADOR DE EXTRAÇÃO
+    cout << "Informe um numero: " << endl;
 
-    //O campo possui 1000 caracteres
-    cout << "Estudando a entrada e saída de dados" << endl;
-    /*cout << setw(10) << 1 << endl;
-    cout << setw(10) << 2 << endl;
-    cout << setw(10) << 3 << endl;
-    cout << setw(10) << 4 << endl; */
+    int num1 = 0;
+    cin >> num1;
 
-    cout << setw(10) << 1;
-    cout << setw(10) << 2;
-    cout << setw(10) << 3;
-    cout << setw(10) << 4 << endl;
+    cout << "Informe outro numero: " << endl;
+    int num2 = 0;
+    cin >> num2;
 
-    //HEXADECIMAL
-    cout << "Estudando a entrada e saída de dados" << endl;
-    cout << hex << 10 + 50 << endl;
+    cout << "Os numeros digitados foram: "
+            << num1
+            << " e "
+            << num2
+            << endl;
 
-    system("pause");
     return 0;
 }
