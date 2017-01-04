@@ -5,22 +5,22 @@ using namespace std;
 
 int main()
 {
-    cout << "Digite um numero no intervalo de 45 ate 72" << endl;
-    int i = 0;
-    cin >> i;
+    int x = 20;
+    x = x * 10;
+    x *= 10;
 
-    if(i >= 45 && i <=72)
-    {
-        cout << "Obrigado por informar um numero no intervalo solicitado" << endl;
-        if(i == 45 || i == 72)
-        {
-            cout << "O valor de i eh igual ao valor de algum extremo" << endl;
-        }
-    }
-    else
-    {
-        cout << "O numero digitado nao esta no intervalo solicitado" << endl;
-    }
+    x = x + 10;
+    x += 10;
+
+    x = x / 10;
+    x /= 10;
+
+    x = x - 10;
+    x -= 10;
+
+    x = x % 10;
+    x %= 10;
+    //Ambas operações geram o mesmo valor
 
     system("pause");
     return 0;
