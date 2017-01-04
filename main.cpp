@@ -5,22 +5,10 @@ using namespace std;
 
 int main()
 {
-    int x = 20;
-    x = x * 10;
-    x *= 10;
-
-    x = x + 10;
-    x += 10;
-
-    x = x / 10;
-    x /= 10;
-
-    x = x - 10;
-    x -= 10;
-
-    x = x % 10;
-    x %= 10;
-    //Ambas operações geram o mesmo valor
+    for(int i = 0; i <= 10; i++)
+    {
+        cout << "o valor de i eh igual a: " << i << endl;
+    }
 
     system("pause");
     return 0;
