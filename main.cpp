@@ -5,18 +5,25 @@ using namespace std;
 
 int main()
 {
-    //Perguntar qual tabuada para o usuário
-    cout << "Insira o numero que voce deseja ver os multiplos: " << endl;
-    int n = 0;
-    cin >> n;
+    //Imprimindo numeros de 0 a 99
+   int num = 0;
 
-    //Implementar for
-    for(int i = 1; i <= 10; i++)
-    {
-        cout << i << " x " << n << " = " << i*n << endl;
-    }
+   while(num < 100)
+   {
+       cout << num << endl;
+       num++;
+   }
+    cout << endl;
 
-    //Imprimir a tabuada
+   //Imprimindo numeros de 99 a 0
+   int num2 = 100;
+
+   while(num2 > 0)
+   {
+       cout << num2 << endl;
+       num2--;
+   }
+
     system("pause");
     return 0;
 }
