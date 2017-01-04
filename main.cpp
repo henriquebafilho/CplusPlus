@@ -5,26 +5,18 @@ using namespace std;
 
 int main()
 {
-    //Incremento ----> x++ = (x = x + 1)
-    //Decremento ----> x-- = (x = x - 1)
+    //Perguntar qual tabuada para o usuário
+    cout << "Insira o numero que voce deseja ver os multiplos: " << endl;
+    int n = 0;
+    cin >> n;
 
-    cout << "Operador de incremento" << endl;
-    cout << endl;
-    int i = 0, i2 = 0;
-    cout << "Pre " << ++i << endl;//pre-incrementar
-    cout << "Pos " << i2++ << endl;//pos-incrementar
-    cout << "Pos " << i2 << endl;
+    //Implementar for
+    for(int i = 1; i <= 10; i++)
+    {
+        cout << i << " x " << n << " = " << i*n << endl;
+    }
 
-    cout << endl;
-
-    cout << "Operador de decremento" << endl;
-    cout << endl;
-    i = 0;
-    i2 = 0;
-    cout << "Pre " << --i << endl;//pre-decrementar
-    cout << "Pos " << i2-- << endl;//pos-decrementar
-    cout << "Pos " << i2 << endl;
-
+    //Imprimir a tabuada
     system("pause");
     return 0;
 }
