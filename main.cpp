@@ -5,32 +5,21 @@ using namespace std;
 
 int main()
 {
-    double nota1, nota2, nota3, nota4;
+    cout << "Digite um numero no intervalo de 45 ate 72" << endl;
+    int i = 0;
+    cin >> i;
 
-    cout << "Digite a sua primeira nota do semestre >> ";
-    cin >> nota1;
-
-    cout << "Digite a sua segunda nota do semestre >> ";
-    cin >> nota2;
-
-    cout << "Digite a sua terceira nota do semestre >> ";
-    cin >> nota3;
-
-    cout << "Digite a sua quarta nota do semestre >> " ;
-    cin >> nota4;
-
-    double soma = nota1 + nota2 + nota3 + nota4;
-    soma = (soma / 4);
-
-    cout << "A sua media no semestre foi :" << soma << endl << endl;
-
-    if(soma >= 7)
+    if(i >= 45 && i <=72)
     {
-        cout << "Parabens! Voce foi aprovado" << endl;
+        cout << "Obrigado por informar um numero no intervalo solicitado" << endl;
+        if(i == 45 || i == 72)
+        {
+            cout << "O valor de i eh igual ao valor de algum extremo" << endl;
+        }
     }
     else
     {
-        cout << "Eita! Voce foi reprovado" << endl;
+        cout << "O numero digitado nao esta no intervalo solicitado" << endl;
     }
 
     system("pause");
