@@ -1,44 +1,45 @@
 #include <iostream>
 #include <stdlib.h>
 #include <iomanip>
+
 using namespace std;
 
 int main()
 {
-    int num = 0;
+   char c;
+   cout << "Por favor digite uma letra entre A e F: " << endl;
+   cin >> c;
 
-    cout << "Insira um numero correspondente a um mes desejado: " << endl;
-    cin >> num;
+   switch(c)
+   {
+       case 'a':
+       case 'A':
+        cout << "Voce digitou a letra 'a' ou 'A'. " << endl;
+        break;
 
-    switch(num)
-    {
-        case 1: cout << "Janeiro" << endl;
+       case 'b':
+       case 'B':
+        cout << "Voce digitou a letra 'b' ou 'B'. " << endl;
         break;
-        case 2: cout << "Fevereiro" << endl;
+
+        case 'c':
+        case 'C':
+        case 'd':
+        case 'D':
+        case 'e':
+        case 'E':
+            cout << "Voce digitou a letra 'c', 'C', 'd', 'D', 'e' ou 'E'. " << endl;
+            break;
+
+        case 'f':
+        case 'F':
+        cout << "Voce digitou a letra 'f' ou 'F'. " << endl;
         break;
-        case 3: cout << "Março" << endl;
+
+        default: cout << "O valor digitado nao corresponde a nenhuma letra entre A e G. " << endl;
         break;
-        case 4: cout << "Abril" << endl;
-        break;
-        case 5: cout << "Maio" << endl;
-        break;
-        case 6: cout << "Junho" << endl;
-        break;
-        case 7: cout << "Julho" << endl;
-        break;
-        case 8: cout << "Agosto" << endl;
-        break;
-        case 9: cout << "Setembro" << endl;
-        break;
-        case 10: cout << "Outubro" << endl;
-        break;
-        case 11: cout << "Novembro" << endl;
-        break;
-        case 12: cout << "Dezembro" << endl;
-        break;
-        default : cout << "O valor inserido nao corresponde a nenhum mes" << endl;
-        break;
-    }
+   }
+
     system("pause");
     return 0;
 }
