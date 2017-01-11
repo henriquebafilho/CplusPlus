@@ -6,27 +6,26 @@ using namespace std;
 
 int main()
 {
-   int num = 0;
-   bool continuar = true;
 
-   while(continuar)
-   {
-       cout << "Insira um numero qualquer para saber se eh impar ou par: " << endl;
-       cin >> num;
+   double num1;
+   double num2;
+   double num3;
+   double total;
 
-       while(num != 0 && num != 1)
-       {
-           num -=2;
-       }
-       if(num == 1)
-       {
-           cout << "o numero digitado eh impar" << endl;
-       }
-       else if(num == 0)
-       {
-           cout << "o numero digitado eh par" << endl;
-       }
-   }
+   cout << "Insira o primeiro valor: ";
+   cin >> num1;
+
+   cout << num1 << " esta para ";
+   cin >> num2;
+
+   cout << " assim como ";
+   cin >> num3;
+
+   cout << num3 << " esta para x. " << endl;
+
+   total = num3 * num2 / num1;
+   cout << "x = " << total << endl;
+
     system("pause");
     return 0;
 }
