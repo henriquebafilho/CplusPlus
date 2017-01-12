@@ -6,25 +6,41 @@ using namespace std;
 
 int main()
 {
+    cout << "Digite um numero entre 1 e 3" << endl;
+    int num = 0;
+    cin >> num;
 
-   double num1;
-   double num2;
-   double num3;
-   double total;
-
-   cout << "Insira o primeiro valor: ";
-   cin >> num1;
-
-   cout << num1 << " esta para ";
-   cin >> num2;
-
-   cout << " assim como ";
-   cin >> num3;
-
-   cout << num3 << " esta para x. " << endl;
-
-   total = num3 * num2 / num1;
-   cout << "x = " << total << endl;
+    if(num == 1){
+        for(int i = 0; i < 5; i++)
+        {
+            cout << "A variavel da instrucao FOR eh " << i << endl;
+        }
+    }
+    else
+    {
+        if(num == 2)
+        {
+            int i2 = 0;
+            while(i2 < 5)
+            {
+                i2++;
+                cout << "O valor da variavel WHILE eh " << i2 << endl;
+            }
+        }
+        else
+        {
+            if(num == 3)
+            {
+                int i3 = 0;
+                do
+                {
+                    i3++;
+                    cout << "O valor da variavel DOWHILE eh " << i3 << endl;
+                }
+                while(i3 < 5);
+            }
+        }
+    }
 
     system("pause");
     return 0;
