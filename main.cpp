@@ -5,23 +5,13 @@ using namespace std;
 
 int main()
 {
-    int n = 0;
-    while (true)
-    {
-        n++;
-        if(n >= 10)
-        {
-            break;
-        }
-        else
-        {
-            if(n == 4 or n == 6)
-            {
-                continue;
-            }
-        }
-        cout << n << endl;
-    }
+    int a, b, c;
+    a = 15;
+    b = 10;
+    c = 5;
+
+    int i = a * (b + c);
+    cout << i << endl;
 
     system("pause");
     return 0;
