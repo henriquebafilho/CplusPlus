@@ -10,8 +10,10 @@ int main()
     b = 10;
     c = 5;
 
-    int i = a * (b + c);
-    cout << i << endl;
+    cout <<
+    ((((((((b+c)+1+((((((((((1000*10))))))))))))))))/1000/10-1)
+    <<
+    endl;
 
     system("pause");
     return 0;
