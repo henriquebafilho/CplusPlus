@@ -5,18 +5,23 @@ using namespace std;
 
 int main()
 {
-    double precos[10] = {1, 2, 3};
-
-    precos[0] = 14.55;
-    precos[2] = 9.68;
-    precos[3] = 1.1;
-    precos[7] = 2;
-
-    for(int i = 0; i <= 9; i++)
+    double val[5];
+    //1) Entrada de valores (5 numeros)
+    for(int i = 0; i <= 4; i++)
     {
-        //precos[i] = 0;
-        cout << precos[i] << endl;
+        cout << "Informe o " << i+1 << " valor. " << endl;
+        cin >> val[i];
     }
+
+    double total = 0;
+    //2) Calcular a media
+    for(int i2 = 0; i2 <= 4; i2++)
+    {
+        total += val[i2];
+    }
+
+    cout << fixed;
+    cout << "A media eh: " << (total / 5) << endl;
 
     system("pause");
     return 0;
