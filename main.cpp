@@ -5,21 +5,18 @@ using namespace std;
 
 int main()
 {
-    int nums[10];
+    double precos[10] = {1, 2, 3};
 
-    nums[0] = 100;
-    nums[1] = 99;
-    nums[2] = 50;
-    nums[3] = 25;
-    nums[4] = 4;
-    nums[5] = 5;
-    nums[6] = 60;
-    nums[7] = 0;
-    nums[8] = -1;
-    nums[9] = 9;
+    precos[0] = 14.55;
+    precos[2] = 9.68;
+    precos[3] = 1.1;
+    precos[7] = 2;
 
-    cout << nums[5] + nums[9] << endl;
-    cout << nums[0] << endl;
+    for(int i = 0; i <= 9; i++)
+    {
+        //precos[i] = 0;
+        cout << precos[i] << endl;
+    }
 
     system("pause");
     return 0;
