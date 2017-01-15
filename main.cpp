@@ -5,23 +5,17 @@ using namespace std;
 
 int main()
 {
-    double val[5];
-    //1) Entrada de valores (5 numeros)
-    for(int i = 0; i <= 4; i++)
-    {
-        cout << "Informe o " << i+1 << " valor. " << endl;
-        cin >> val[i];
-    }
+    int tabela[2][2];
+    tabela[0][0] = 10;
+    tabela[0][1] = 100; //10, 100
+    tabela[1][0] = 20; //20, 111
+    tabela[1][1] = 111;
 
-    double total = 0;
-    //2) Calcular a media
-    for(int i2 = 0; i2 <= 4; i2++)
-    {
-        total += val[i2];
-    }
+    int tabela2[2][2] = {{10, 100},
+                         {20, 111}};
 
-    cout << fixed;
-    cout << "A media eh: " << (total / 5) << endl;
+    cout << "{{" << tabela2[0][0] << ", " << tabela2[0][1] << "}, {"
+                 << tabela2[1][0] << ", " << tabela2[1][1] << "}}" << endl;
 
     system("pause");
     return 0;
