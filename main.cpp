@@ -21,7 +21,13 @@ int main()
         resultado = false;
         cout << "Operacao impossivel" << endl;
     }
+
     if(resultado == true){
+            if(minutos >= 8)
+            {
+                minutos = 8;
+                segundos = 0;
+            }
         cout << "A musica fara scrobble em: " << minutos / 2 << " minutos e "
         << segundos / 2 << " segundos." << endl;
         }
